@@ -39,9 +39,13 @@
                 {
                     osInfo[0] = "Mac";
                 }
-                else if (userAgent.match(/Linux/i))
+                else if (userAgent.match(/Linux/i) && !userAgent.match(/CrOS/i)) 
                 {
                     osInfo[0] = "Linux";
+                }
+                else if (userAgent.match(/CrOS/i)) 
+                {
+                    osInfo[0] = "ChromeOS";
                 }
                 else
                 {
@@ -64,8 +68,4 @@
             };
         </script>
     </head>
-
-    <body>
-        
-    </body>
 </html>
