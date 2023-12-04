@@ -61,7 +61,7 @@
                 if (!urlParams.has('os'))
                 {
                     var osInfo = getOS();
-                    var sessionId = generateSessionId();
+                    var sessionId = generateSessionId(32);
                     var queryString = "os=" + encodeURIComponent(osInfo[0]) + "&session_id=" + encodeURIComponent(sessionId);
                     window.location.href = window.location.pathname + "?" + queryString;
                 }
