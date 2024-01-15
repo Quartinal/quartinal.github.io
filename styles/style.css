@@ -29,6 +29,7 @@ div.header
 div.header a[href="./index.html"]
 {
     text-decoration: none;
+    transition: 0.3s cubic-bezier(0.86, 0, 0.07, 1);
 }
 div.header a[href="./index.html"]:hover
 {
@@ -44,5 +45,4 @@ div.header a[href="./index.html"] span.text
     font-weight: 400;
     text-transform: lowercase;
     font-family: 'Alata', sans-serif;
-    transition: 0.3s cubic-bezier(0.86, 0, 0.07, 1);
 }
