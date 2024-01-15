@@ -30,12 +30,6 @@ div.header a[href="index.html"]
 {
     text-decoration: none;
 }
-div.header a span.quartinal
-{
-    background-image: url("https://avatars.githubusercontent.com/u/148902345?v=4");
-    border-radius: 50px;
-    font-size: 39px;
-}
 div.header a span.text
 {
     background: linear-gradient(to right, #67b26f, #4ca2cd);
