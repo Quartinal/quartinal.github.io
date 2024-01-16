@@ -57,7 +57,8 @@ span.ac-ln-menucta-chevron
   height: 22px;
   transform: scale(1.14);
 }
-span.ac-ln-menucta-chevron::before, span.ac-ln-menucta-chevron::after 
+span.ac-ln-menucta-chevron::before, 
+span.ac-ln-menucta-chevron::after 
 {
     content: "";
     display: block;
@@ -97,7 +98,7 @@ span.ac-ln-menucta-chevron.open::after
 ul.menu
 {
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -132,4 +133,47 @@ ul.menu li a:hover
 {
     box-shadow: inset 0 6px 0 0 #cce5eb;
     color: #cce5eb;
+}
+/*Megamenu animation*/
+@keyframes scaleUp
+{
+    0%
+    {
+        width: 0px;
+        height: 0px;
+    }
+    10%
+    {
+        width: calc(300px / 10.9);
+        height: calc(325px / 10.9);
+    }
+    20%
+    {
+        width: calc(300px / 8.5);
+        height: calc(325px / 8.5);
+    }
+    30%
+    {
+        width: calc(300px / 6.1);
+        height: calc(325px / 6.1);
+    }
+    40%
+    {
+        width: calc(300px / 3.7);
+        height: calc(325px / 3.7);
+    }
+    50%, 
+    60%
+    {
+        width: calc(300px / 1.3);
+        height: calc(300px / 1.3);
+    }
+    70%,
+    80%,
+    90%,
+    100%
+    {
+        width: calc(300px / 0);
+        width: calc(325px / 0);
+    }
 }
