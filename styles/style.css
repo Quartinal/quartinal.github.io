@@ -137,3 +137,8 @@ ul.menu li a:hover
     box-shadow: inset 0 6px 0 0 #cce5eb;
     color: #cce5eb;
 }
+span.ac-ln-menucta-chevron:focus ul.menu
+{
+    opacity: 1;
+    transform: scale(1);
+}
