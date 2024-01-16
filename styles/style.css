@@ -144,13 +144,13 @@ ul.menu li a:hover
     }
     10%
     {
-        width: calc(300px / 10.9);
-        height: calc(325px / 10.9);
+        width: calc(300px / 10.1);
+        height: calc(325px / 10.1);
     }
     20%
     {
-        width: calc(300px / 8.5);
-        height: calc(325px / 8.5);
+        width: calc(300px / 8.1);
+        height: calc(325px / 8.1);
     }
     30%
     {
@@ -159,14 +159,14 @@ ul.menu li a:hover
     }
     40%
     {
-        width: calc(300px / 3.7);
-        height: calc(325px / 3.7);
+        width: calc(300px / 4.1);
+        height: calc(325px / 4.1);
     }
     50%, 
     60%
     {
-        width: calc(300px / 1.3);
-        height: calc(300px / 1.3);
+        width: calc(300px / 2.1);
+        height: calc(300px / 2.1);
     }
     70%,
     80%,
