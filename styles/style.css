@@ -111,6 +111,8 @@ ul.menu
     border-radius: 50px;
     width: 300px;
     height: 325px;
+    transform: scale(0);
+    transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
 }
 ul.menu li
 {
@@ -124,10 +126,10 @@ ul.menu li a
     font-weight: 400;
     text-transform: uppercase;
     font-family: 'Alata', sans-serif;
-    transition: 0.3s cubic-bezier(0.86, 0, 0.07, 1);
-    -webkit-transition: 0.3s cubic-bezier(0.86, 0, 0.07, 1);
-    -moz-transition: 0.3s cubic-bezier(0.86, 0, 0.07, 1);
-    -o-transition: 0.3s cubic-bezier(0.86, 0, 0.07, 1);
+    transition: 1s cubic-bezier(0.86, 0, 0.07, 1);
+    -webkit-transition: 1s cubic-bezier(0.86, 0, 0.07, 1);
+    -moz-transition: 1s cubic-bezier(0.86, 0, 0.07, 1);
+    -o-transition: 1s cubic-bezier(0.86, 0, 0.07, 1);
 }
 ul.menu li a:hover
 {
