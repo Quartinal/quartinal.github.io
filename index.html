@@ -11,6 +11,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
 
+        <!--Borrows jQuery script from my Civil Proxy project
+            [https://github.com/Command-Enterprises/Civil]-->
+        
+        <script src="https://civil-proxy.vercel.app/js/jquery.min.js"></script>
+
         <script>
             function generateSessionId(length) 
             {
@@ -74,6 +79,15 @@
     <body>
         <div class="header">
             <a href="./index.html"><span class="text">Quartinal</span></a>
+
+            <span class="ac-ln-menucta-chevron"></span>
         </div>
+
+        <script>
+            $('.ac-ln-menucta-chevron').click( function(e) {
+                e.preventDefault()
+                $('.ac-ln-menucta-chevron').toggleClass('open')
+            })
+        </script>
     </body>
 </html>
