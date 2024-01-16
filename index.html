@@ -96,14 +96,14 @@
                 $('.ac-ln-menucta-chevron').toggleClass('open')
                 $('ul.menu').css({
                     transform: function() {
-                        return (this.value === 'scale(1)') ?
-                            'scale(0)' :
-                            'scale(1)'
+                        return (this.value === 'scale(0)') ?
+                            'scale(1)' :
+                            'scale(0)'
                     },
                     opacity: function() {
-                        return (this.value === '1') ?
-                            '0' :
-                            '1'
+                        return (this.value === '0') ?
+                            '1' :
+                            '0'
                     }
                 })
             })
