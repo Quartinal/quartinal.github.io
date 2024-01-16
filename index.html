@@ -95,10 +95,10 @@
                 e.preventDefault()
                 $('.ac-ln-menucta-chevron').toggleClass('open')
                 $('ul.menu').css({
-                    animation: function() {
-                        return (this.value === 'scaleUp 0.3s cubic-bezier(0.86, 0, 0.07, 1)') ?
-                            'scaleUp 0.3s cubic-bezier(0.86, 0, 0.07, 1) reverse' :
-                            'scaleUp 0.3s cubic-bezier(0.86, 0, 0.07, 1)'
+                    transform: function() {
+                        return (this.value === 'scale(1)') ?
+                            'scale(0)' :
+                            'scale(1)'
                     },
                     display: function() {
                         return (this.value === 'flex') ?
