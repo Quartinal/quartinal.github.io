@@ -110,9 +110,8 @@ ul.menu
     border: 3px solid #4ca2cd;
     opacity: 0;
     border-radius: 50px;
-    width: 300px;
-    height: 325px;
-    transform: none;
+    width: 0px;
+    height: 0px;
     transition: 1s cubic-bezier(0.86, 0, 0.07, 1);
 }
 ul.menu li
@@ -140,5 +139,6 @@ ul.menu li a:hover
 span.ac-ln-menucta-chevron:focus ul.menu
 {
     opacity: 1;
-    transform: scale(1);
+    width: 300px;
+    height: 325px;
 }
