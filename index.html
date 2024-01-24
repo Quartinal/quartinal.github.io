@@ -91,6 +91,13 @@
         </ul>
 
         <script>
+            $('span.ac-ln-menucta-chevron').click( function(e) {
+                e.preventDefault();
+                $('span.ac-ln-menucta-chevron').toggleClass('open');
+            });
+        </script>
+
+        <script>
             $(function() {
                 const handleMenuClick = (event) => {
                     const divTrigger = $('span.ac-ln-menucta-chevron').index(event.currentTarget);
