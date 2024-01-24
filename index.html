@@ -111,9 +111,9 @@
                         }, 200);
                     
                     if (thisMegaMenu.is(':hidden')) {
-                        thisMegaMenu.animate({ height: thisMegaMenu.outerHeight() }, 200);
+                        thisMegaMenu.animate({width: thisMegaMenu.outerWidth(), height: thisMegaMenu.outerHeight() }, 200);
                     } else {
-                        thisMegaMenu.animate({ height: 0 }, 200);
+                        thisMegaMenu.animate({ width: 0, height: 0 }, 200);
                     }
 
                     $('span.ac-ln-menucta-chevron').removeClass('active');
@@ -122,7 +122,7 @@
 
                 const handleCloseButtonClick = (event) => {
                     const thisMegaMenu = $('ul.menu:visible');
-                    thisMegaMenu.animate({ height: 0 }, 200);
+                    thisMegaMenu.animate({ width: 0, height: 0 }, 200);
                     event.preventDefault();
                 };
 
