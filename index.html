@@ -106,14 +106,15 @@
                     $('ul.menu')
                         .not(thisMegaMenu)
                         .animate({
+                            opacity: 0,
                             width: 0,
                             height: 0
                         }, 200);
                     
                     if (thisMegaMenu.is(':hidden')) {
-                        thisMegaMenu.animate({width: thisMegaMenu.outerWidth(), height: thisMegaMenu.outerHeight() }, 200);
+                        thisMegaMenu.animate({opacity: 1, width: thisMegaMenu.outerWidth(), height: thisMegaMenu.outerHeight() }, 200);
                     } else {
-                        thisMegaMenu.animate({ width: 0, height: 0 }, 200);
+                        thisMegaMenu.animate({ opacity: 0, width: 0, height: 0 }, 200);
                     }
 
                     $('span.ac-ln-menucta-chevron').removeClass('active');
