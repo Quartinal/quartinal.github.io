@@ -98,7 +98,7 @@ span.ac-ln-menucta-chevron.open::after
 ul.menu
 {
     position: absolute;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
