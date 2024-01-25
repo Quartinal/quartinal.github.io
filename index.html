@@ -91,24 +91,20 @@
         </ul>
 
         <script>
-            $('span.ac-ln-menucta-chevron').click( function(e) {
+            $('span.ac-ln-menucta-chevron').on('click', function(e) {
                 e.preventDefault();
                 $('span.ac-ln-menucta-chevron').toggleClass('open');
             });
-        </script>
 
-        <script>
             $(function() {
-                const handleMenuClick = (event) => {
+                $('span.ac-ln-menucta-chevron').on('click', function(event) {
                     const divTrigger = $('span.ac-ln-menucta-chevron').index(event.currentTarget);
                     const thisMegaMenu = $('ul.menu').eq(divTrigger);
 
-                    $('ul.menu')
-                        .not(thisMegaMenu)
-                        .animate({
-                            transform: 'scale(-1)'
-                        }, 200);
-                    
+                    $('ul.menu').not(thisMegaMenu).animate({
+                        transform: 'scale(-1)'
+                    }, 200);
+
                     if (thisMegaMenu.is(':hidden')) {
                         thisMegaMenu.animate({transform: 'scale(1)'}, 200);
                     } else {
@@ -117,16 +113,14 @@
 
                     $('span.ac-ln-menucta-chevron').removeClass('active');
                     $(event.currentTarget).toggleClass('active');
-                };
-
-                const handleCloseButtonClick = (event) => {
-                    const thisMegaMenu = $('ul.menu:visible');
-                    thisMegaMenu.animate({ width: 0, height: 0 }, 200);
-                    event.preventDefault();
-                };
-
-                $('span.ac-ln-menucta-chevron').click(handleMenuClick);
             });
+
+            $('ul.menu-close-button').on('click', function(event) {
+                const thisMegaMenu = $('ul.menu:visible');
+                thisMegaMenu.animate({ width: 0, height: 0 }, 200);
+                event.preventDefault();
+            });
+        });
         </script>
     </body>
 </html>
