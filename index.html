@@ -113,14 +113,14 @@
 
                     $('span.ac-ln-menucta-chevron').removeClass('active');
                     $(event.currentTarget).toggleClass('active');
-            });
+                });
 
-            $('ul.menu-close-button').on('click', function(event) {
-                const thisMegaMenu = $('ul.menu:visible');
-                thisMegaMenu.animate({ width: 0, height: 0 }, 200);
-                event.preventDefault();
+                $('ul.menu-close-button').on('click', function(event) {
+                    const thisMegaMenu = $('ul.menu:visible');
+                    thisMegaMenu.animate({ width: 0, height: 0 }, 200);
+                    event.preventDefault();
+                });
             });
-        });
         </script>
     </body>
 </html>
