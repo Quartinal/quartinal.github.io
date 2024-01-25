@@ -96,30 +96,28 @@
                 $('span.ac-ln-menucta-chevron').toggleClass('open');
             });
 
-            $(function() {
-                $('span.ac-ln-menucta-chevron').on('click', function(event) {
-                    const divTrigger = $('span.ac-ln-menucta-chevron').index(event.currentTarget);
-                    const thisMegaMenu = $('ul.menu').eq(divTrigger);
+            $('span.ac-ln-menucta-chevron').on('click', function(event) {
+                const divTrigger = $('span.ac-ln-menucta-chevron').index(event.currentTarget);
+                const thisMegaMenu = $('ul.menu').eq(divTrigger);
 
-                    $('ul.menu').not(thisMegaMenu).animate({
-                        transform: 'scale(-1)'
-                    }, 200);
+                $('ul.menu').not(thisMegaMenu).animate({
+                    transform: 'scale(-1)'
+                }, 200);
 
-                    if (thisMegaMenu.is(':hidden')) {
-                        thisMegaMenu.animate({transform: 'scale(1)'}, 200);
-                    } else {
-                        thisMegaMenu.animate({transform: 'scale(-1)'}, 200);
-                    }
+                if (thisMegaMenu.is(':hidden')) {
+                    thisMegaMenu.animate({transform: 'scale(1)'}, 200);
+                } else {
+                    thisMegaMenu.animate({transform: 'scale(-1)'}, 200);
+                }
 
-                    $('span.ac-ln-menucta-chevron').removeClass('active');
-                    $(event.currentTarget).toggleClass('active');
-                });
+                $('span.ac-ln-menucta-chevron').removeClass('active');
+                $(event.currentTarget).toggleClass('active');
+            });
 
-                $('ul.menu-close-button').on('click', function(event) {
-                    const thisMegaMenu = $('ul.menu:visible');
-                    thisMegaMenu.animate({ width: 0, height: 0 }, 200);
-                    event.preventDefault();
-                });
+            $('ul.menu-close-button').on('click', function(event) {
+                const thisMegaMenu = $('ul.menu:visible');
+                thisMegaMenu.animate({ width: 0, height: 0 }, 200);
+                event.preventDefault();
             });
         </script>
     </body>
