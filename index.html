@@ -106,13 +106,13 @@
                     $('ul.menu')
                         .not(thisMegaMenu)
                         .animate({
-                            transform: 'scale(0)'
+                            transform: 'scale(-1)'
                         }, 200);
                     
                     if (thisMegaMenu.is(':hidden')) {
                         thisMegaMenu.animate({transform: 'scale(1)'}, 200);
                     } else {
-                        thisMegaMenu.animate({transform: 'scale(0)'}, 200);
+                        thisMegaMenu.animate({transform: 'scale(-1)'}, 200);
                     }
 
                     $('span.ac-ln-menucta-chevron').removeClass('active');
